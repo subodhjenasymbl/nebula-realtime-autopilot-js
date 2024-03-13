@@ -1,3 +1,5 @@
-export default function sayHello(name) {
+function sayHello(name) {
   return `Hello, ${name}!`;
 }
+
+export default sayHello;
