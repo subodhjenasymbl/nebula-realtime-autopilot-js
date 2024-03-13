@@ -2,15 +2,32 @@
   "name": "nebula-realtime-autopilot",
   "version": "1.0.0",
   "description": "Nebula Realtime Autopilot JS SDK",
-  "main": "index.js",
-  "author": "Subodh Jena <jenasubodh@gmail.com",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/subodhjenasymbl/nebula-realtime-autopilot.git"
+  },
+  "author": "Subodh Jena <jenasubodh@gmail.com>",
   "scripts": {
     "build": "babel src --out-dir lib",
-    "test": "jest"
+    "test": "jest",
+    "clean": "rm -rf lib",
+    "prebuild": "npm run clean",
+    "prepare": "npm run build"
   },
-  "keywords": [],
+  "keywords": [
+    "realtime",
+    "autopilot",
+    "nebula",
+    "sdk",
+    "javascript"
+  ],
   "license": "MIT",
+  "files": [
+    "lib"
+  ],
   "devDependencies": {
+    "@babel/cli": "^7.23.9",
     "@babel/core": "^7.24.0",
     "@babel/preset-env": "^7.24.0",
     "babel-loader": "^9.1.3",
