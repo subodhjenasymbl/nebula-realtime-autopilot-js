@@ -1,6 +1,6 @@
 {
   "name": "nebula-realtime-autopilot",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Nebula Realtime Autopilot JS SDK",
   "main": "lib/index.js",
   "repository": {
@@ -11,6 +11,8 @@
   "scripts": {
     "build": "babel src --out-dir lib",
     "test": "jest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "clean": "rm -rf lib",
     "prebuild": "npm run clean",
     "prepare": "npm run build"

@@ -1,0 +1,16 @@
+version: 2
+updates:
+  - package-ecosystem: 'npm'
+    directory: '/' 
+    schedule:
+      interval: 'weekly'
+    commit-message:
+      prefix: 'upgrade'
+      include: 'scope'
+    target-branch: 'main'
+    labels:
+      - 'dependencies'
+      - 'javascript'
+    reviewers:
+      - 'dev-team'
+    milestone: 1
